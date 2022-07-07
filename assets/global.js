@@ -1127,5 +1127,14 @@ $(document).ready(function () {
     verticalSwiping: true,
     focusOnSelect: true,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        },
+      },
+    ],
   });
 });
