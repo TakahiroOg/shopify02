@@ -1,0 +1,269 @@
+* {
+  min-width: 0;
+
+  min-height: 0;
+}
+.row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.slider {
+  display: none;
+}
+.slider.slick-initialized {
+  display: block;
+}
+.slick-vertical .slick-slide {
+  margin-bottom: 15px;
+}
+.product-single .product-gallery .slick-arrow {
+  z-index: 20;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+.slick-prev {
+  left: 0;
+  top: 47%;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slick-next {
+  right: 0;
+  top: 47%;
+}
+.slick-arrow {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 100;
+}
+.slick-prev::before {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/1774/1228/files/dashicons_arrow-left-alt2.svg?v=1657181296);
+}
+.slick-next::before {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/1774/1228/files/dashicons_arrow-right-alt2.svg?v=1657181296);
+}
+.product-gallery {
+  display: flex;
+  flex: 0 0 50%;
+}
+.preview {
+  display: flex;
+  flex: 0 0 72px;
+  height: 390px;
+  padding: 0 8px;
+}
+.product-img {
+  flex: calc(100%-72px);
+}
+.product-name {
+  font-size: 40px;
+  margin-bottom: 17px;
+}
+.price {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+.price > * {
+  line-height: 100%;
+}
+.current {
+  font-weight: 700;
+  font-size: 30px;
+}
+.old {
+  font-size: 24px;
+  text-decoration-line: line-through;
+  opacity: 0.4;
+  margin-bottom: 1px;
+}
+.promo-tag {
+  padding: 4px 10px;
+  background: #a02525;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+.reviews {
+  padding-left: 5px;
+  line-height: 1.2;
+  /* opacity: 0.7; */
+  font-size: 16px;
+}
+.b-get-btn button {
+  width: 100%;
+  max-width: 450px;
+  background: #000;
+  color: #fff;
+  padding: 15px 0;
+  line-height: 1;
+  border: 1px solid #000;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.product-form-wrap {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+.product-form__input {
+  flex: 0 0 100%;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+  max-width: 37rem;
+  min-width: fit-content;
+  border: none;
+}
+variant-radios,
+variant-selects {
+  display: block;
+}
+
+.product-form__input--dropdown {
+  margin-bottom: 1.6rem;
+}
+
+.product-form__input .form__label {
+  padding-left: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+fieldset.product-form__input .form__label {
+  margin-bottom: 0.2rem;
+}
+
+.product-form__input input[type="radio"] {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+.product-form__input input[type="radio"] + label {
+  border: var(--variant-pills-border-width) solid
+    rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  background-color: rgb(var(--color-background));
+  color: rgba(var(--color-foreground));
+  color: rgb(var(--color-foreground));
+  display: inline-block;
+  margin: 0.7rem 0.5rem 0.2rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-align: center;
+  transition: border var(--duration-short) ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-form__input input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: calc(var(--variant-pills-border-width) * -1);
+  right: calc(var(--variant-pills-border-width) * -1);
+  bottom: calc(var(--variant-pills-border-width) * -1);
+  left: calc(var(--variant-pills-border-width) * -1);
+  z-index: -1;
+  border-radius: var(--variant-pills-radius);
+  box-shadow: var(--variant-pills-shadow-horizontal-offset)
+    var(--variant-pills-shadow-vertical-offset)
+    var(--variant-pills-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
+}
+
+.product-form__input input[type="radio"] + label:hover {
+  border-color: rgb(var(--color-foreground));
+}
+
+.product-form__input input[type="radio"]:checked + label {
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+@media screen and (forced-colors: active) {
+  .product-form__input input[type="radio"]:checked + label {
+    text-decoration: underline;
+  }
+}
+
+.product-form__input input[type="radio"]:checked + label::selection {
+  background-color: rgba(var(--color-background), 0.3);
+}
+
+.product-form__input input[type="radio"]:disabled + label {
+  border-color: rgba(var(--color-foreground), 0.1);
+  color: rgba(var(--color-foreground), 0.4);
+  text-decoration: line-through;
+}
+.product-form__input input[type="radio"]:focus-visible + label {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
+}
+
+/* Fallback */
+.product-form__input input[type="radio"].focused + label,
+.no-js .shopify-payment-button__button [role="button"]:focus + label {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
+}
+
+/* No outline when focus-visible is available in the browser */
+.no-js
+  .product-form__input
+  input[type="radio"]:focus:not(:focus-visible)
+  + label {
+  box-shadow: none;
+}
+.product-form__input input[type="radio"] + .color-swatch {
+  border: 1px solid #000000; /* Change this hex code to change the color of the non-active/non-selected variant */
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50px;
+}
+.product-form__input input[type="radio"]:checked + .color-swatch,
+.product-form__input input[type="radio"]:hover + .color-swatch {
+  border: 3px solid #000000; /* Change this hex code to change the color of the active/selected variant */
+}
+.product-form__input input[type="radio"] + .swatch {
+  border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-form__input input[type="radio"]:checked + .swatch,
+.product-form__input input[type="radio"]:hover + .swatch {
+  border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
+  background: none;
+}
