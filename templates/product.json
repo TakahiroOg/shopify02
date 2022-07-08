@@ -2,11 +2,12 @@
   "sections": {
     "main": {
       "type": "main-product-2",
-      "settings": {
-      }
+      "settings": {}
+    },
+    "tab-contents": {
+      "type": "tab-contents",
+      "settings": {}
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main", "tab-contents"]
 }
