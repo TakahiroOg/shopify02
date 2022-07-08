@@ -1138,3 +1138,15 @@ $(document).ready(function () {
     ],
   });
 });
+
+$(document).ready(function () {
+  $("ul.shopify-tabs > li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $(this).parent().find("li").removeClass("current-tab");
+    $(".shopify-tab-content").removeClass("current-tab");
+
+    $(this).addClass("current-tab");
+    $("#" + tab_id).addClass("current-tab");
+  });
+});

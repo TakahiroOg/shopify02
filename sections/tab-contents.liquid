@@ -1,6 +1,26 @@
 <section>
 {{ 'section-tab-contents.css' | asset_url | stylesheet_tag }}
 
-<h1>hello</h1>
+
+<div class="container">
+  <ul class="shopify-tabs">
+    <li class="current-tab" data-tab="tab-description">Description</li>
+    <li data-tab="tab-specs">Sizing & Fit</li>
+    <li data-tab="tab-delivery">Risk-Free Shopping</li>
+    <li data-tab="tab-returns">Specs & care instructions</li>
+  </ul>
+  <div id="tab-description" class="shopify-tab-content current-tab">
+    {{ product.description }}
+  </div>
+  <div id="tab-specs" class="shopify-tab-content">
+    {{product.metafields.custom.sizing}}
+  </div>
+  <div id="tab-delivery" class="shopify-tab-content">
+    {{product.metafields.custom.guarantee}}
+  </div>
+  <div id="tab-returns" class="shopify-tab-content">
+    {{product.metafields.custom.specs}}
+  </div>
+</div>
 
 </section>

@@ -4,6 +4,10 @@
       "type": "main-product-2",
       "settings": {}
     },
+    "banner": {
+      "type": "product-banner-3",
+      "settings": {}
+    },
     "tab-contents": {
       "type": "tab-contents",
       "settings": {}

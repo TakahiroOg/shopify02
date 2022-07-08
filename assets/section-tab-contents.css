@@ -1,0 +1,40 @@
+ul.shopify-tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border-bottom: 1px solid #d4d4d4;
+}
+ul.shopify-tabs > li {
+  background: none;
+  color: #333;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+ul.shopify-tabs > li.current-tab {
+  background: #fff;
+  color: #333;
+}
+.shopify-tab-content {
+  display: none;
+  background: #fff;
+  padding: 15px;
+}
+.shopify-tab-content.current-tab {
+  display: block;
+}
+
+.shopify-tabs li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #831825;
+  display: none;
+  width: 100%;
+}
+.shopify-tabs li.current-tab:after {
+  display: block;
+}
