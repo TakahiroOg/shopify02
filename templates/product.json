@@ -13,5 +13,5 @@
       "settings": {}
     }
   },
-  "order": ["main", "tab-contents"]
+  "order": ["main", "banner", "tab-contents"]
 }
