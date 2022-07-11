@@ -211,12 +211,18 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "sma_reviews_section_auto"
   ]
 }

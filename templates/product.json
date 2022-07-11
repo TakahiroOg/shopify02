@@ -2,16 +2,29 @@
   "sections": {
     "main": {
       "type": "main-product-2",
-      "settings": {}
+      "settings": {
+      }
     },
     "banner": {
       "type": "product-banner-3",
-      "settings": {}
+      "settings": {
+      }
     },
     "tab-contents": {
       "type": "tab-contents",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+      }
     }
   },
-  "order": ["main", "banner", "tab-contents"]
+  "order": [
+    "main",
+    "banner",
+    "tab-contents",
+    "sma_reviews_section_auto"
+  ]
 }
