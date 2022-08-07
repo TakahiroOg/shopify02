@@ -1,0 +1,72 @@
+.banner {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(47, 72, 88, 0) 0%,
+      #2f4858 100%
+    ),
+    #606d76;
+  margin: 20px 0;
+  position: relative;
+}
+.banner-img {
+  max-height: 350px;
+  display: block;
+}
+.banner-headline {
+  color: #ffffff;
+  text-shadow: 0 2px 34px rgb(0 0 0 / 40%), 0 3px 3px rgb(0 0 0 / 30%);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+}
+.banner .content {
+  position: relative;
+  z-index: 1;
+  padding: 30px 30px 17px;
+  align-items: flex-end;
+  display: flex;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 36%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/1774/1228/files/4_2.png?v=1657255526);
+  width: 373px;
+  height: 300px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 749px) {
+  .banner-headline {
+    margin: 10px 0;
+    font-size: 40px;
+  }
+  .banner::after {
+    display: none;
+  }
+  .banner .content {
+    position: absolute;
+    bottom: 0;
+  }
+  .banner-img {
+    margin: auto;
+  }
+  .shopify-tabs {
+    display: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .banner .content {
+    padding: 51px 58.5px 36px;
+  }
+  .banner {
+    margin: 45px 0 20px;
+    padding: 0 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-height: 390px;
+  }
+}

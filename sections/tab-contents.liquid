@@ -10,16 +10,25 @@
     <li data-tab="tab-returns">Specs & care instructions</li>
   </ul>
   <div id="tab-description" class="shopify-tab-content current-tab">
-    {{ product.description }}
+      {{ product.description }}
   </div>
   <div id="tab-specs" class="shopify-tab-content">
-    {{product.metafields.custom.sizing}}
+    <h4 class="title toggler">Sizing & Fit</h4>
+    <div class="block">
+      {{product.metafields.custom.sizing}}
+    </div>
   </div>
   <div id="tab-delivery" class="shopify-tab-content">
-    {{product.metafields.custom.guarantee}}
+    <h4 class="title toggler">Risk-Free Shopping</h4>
+    <div class="block">
+      {{product.metafields.custom.guarantee}}
+    </div>
   </div>
   <div id="tab-returns" class="shopify-tab-content">
-    {{product.metafields.custom.specs}}
+    <h4 class="title toggler">Specs & care instructions</h4>
+    <div class="block">
+     {{product.metafields.custom.specs}}
+   </div>
   </div>
 </div>
 

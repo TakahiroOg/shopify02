@@ -38,3 +38,42 @@ ul.shopify-tabs > li.current-tab {
 .shopify-tabs li.current-tab:after {
   display: block;
 }
+.shopify-tab-content .title {
+  margin: 0;
+  padding: 20px 10px;
+  border-top: 1px solid #d4d4d4;
+}
+@media screen and (min-width: 750px) {
+  .shopify-tab-content {
+    display: none;
+  }
+}
+@media screen and (max-width: 749px) {
+  .shopify-tab-content {
+    display: block !important;
+  }
+  .block {
+    display: none;
+  }
+  .shopify-tab-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .block {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.toggler:after {
+  content: "\002B";
+  color: #a02525;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.active:after {
+  content: "\2212";
+  color: #a02525;
+}

@@ -2971,3 +2971,23 @@ details-disclosure > details {
 img {
   max-width: 100%;
 }
+.benefits {
+  padding: 0;
+}
+.benefits li {
+  padding-left: 22px;
+  list-style: none;
+  position: relative;
+}
+.benefits li::before {
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/1774/1228/files/icon1.svg?v=1657266444);
+  position: absolute;
+  left: 0;
+  width: 15px;
+  top: 5px;
+  background-size: contain;
+  background-position: bottom;
+  height: 15px;
+  background-repeat: no-repeat;
+}
